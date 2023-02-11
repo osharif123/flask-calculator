@@ -1,5 +1,0 @@
-*.pyo
-*.pyc
-*cfg
-**/env/
-**/__pycache__/
