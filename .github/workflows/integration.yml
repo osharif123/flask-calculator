@@ -29,5 +29,6 @@ jobs:
         ECR_REPOSITORY: githubdocker
         IMAGE_TAG: ${{ steps.increment-git-tag.outputs.git-tag }}
       run: |
-        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+        docker build githubdocker .
+        docker tag githubdocker:latest 626232090146.dkr.ecr.us-east-2.amazonaws.com/githubdocker:latest
+        docker push 626232090146.dkr.ecr.us-east-2.amazonaws.com/githubdocker:latest
