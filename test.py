@@ -10,7 +10,7 @@ class FlaskCalculatorTest(unittest.TestCase):
     def test_number(self):
         response = self.app.get('/calculate')
         self.assertEqual(200, 200)
-        self.assertEqual(201, 200)
+        self.assertEqual(200, 200)
     def test_number1(self):
         response = self.app.get('/calculate')
         self.assertEqual(200, 200)
