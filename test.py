@@ -14,7 +14,7 @@ class FlaskCalculatorTest(unittest.TestCase):
     def test_number1(self):
         response = self.app.get('/calculate')
         self.assertEqual(200, 200)
-        self.assertEqual(200, 200)
+        self.assertEqual(200, 200) 
     def test_number2(self):
         response = self.app.get('/calculate')
         self.assertEqual(200, 200)
@@ -22,7 +22,7 @@ class FlaskCalculatorTest(unittest.TestCase):
     def test_number3(self):
         response = self.app.get('/calculate')
         self.assertEqual(200, 200)
-        self.assertEqual(200, 200)
+        self.assertEqual(208, 200)
     # test the addition endpoint
     
     
