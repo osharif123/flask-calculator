@@ -12,7 +12,8 @@ def calculate():
     number_one = request.form["number_one"]
     number_two = request.form["number_two"]
     operation = request.form["operation"]
-
+    print('---------------------------------')
+    print(request)
     if operation == "add":
         result = float(number_one) + float(number_two)
         return render_template("calculator.html", result=result)
